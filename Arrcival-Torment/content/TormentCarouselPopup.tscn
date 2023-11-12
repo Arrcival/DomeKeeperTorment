@@ -1,0 +1,221 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://gui/theme.tres" type="Theme" id=1]
+[ext_resource path="res://gui/panels/panel_outside.tres" type="StyleBox" id=2]
+[ext_resource path="res://gui/fonts/FontHeading.tres" type="DynamicFont" id=3]
+[ext_resource path="res://mods-unpacked/Arrcival-Torment/content/TormentCarouselPopup.gd" type="Script" id=4]
+
+[node name="TourmentCarousel" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+theme = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_left = 185.0
+margin_top = 197.0
+margin_right = 1735.0
+margin_bottom = 882.0
+custom_styles/panel = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 1518.0
+margin_bottom = 653.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 1470.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 1400, 0 )
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 1454.0
+margin_bottom = 65.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+custom_fonts/font = ExtResource( 3 )
+text = "loadout.torment.pickyourdifficulty"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 81.0
+margin_right = 1454.0
+margin_bottom = 589.0
+alignment = 1
+
+[node name="LeftContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 428.0
+margin_bottom = 508.0
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer"]
+margin_top = 108.0
+margin_right = 428.0
+margin_bottom = 399.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 416.0
+margin_bottom = 279.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 251.0
+
+[node name="PreviousModifierTier" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 372.0
+margin_bottom = 65.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "II"
+align = 1
+valign = 1
+
+[node name="LostModifier" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 81.0
+margin_right = 372.0
+margin_bottom = 162.0
+rect_min_size = Vector2( 300, 0 )
+text = "-3% to monster health and that's maybe better like this
+Waoh a new modifier"
+align = 1
+autowrap = true
+
+[node name="LeftButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 178.0
+margin_right = 372.0
+margin_bottom = 235.0
+text = "loadout.torment.reducedifficulty"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 444.0
+margin_right = 996.0
+margin_bottom = 508.0
+custom_constants/separation = 48
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 552.0
+margin_bottom = 403.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 540.0
+margin_bottom = 391.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 512.0
+margin_bottom = 363.0
+
+[node name="CurrentModifierTier" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 496.0
+margin_bottom = 65.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "III"
+align = 1
+valign = 1
+
+[node name="TotalModifiers" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 81.0
+margin_right = 496.0
+margin_bottom = 274.0
+text = "+3% to monster health
++5 to idk whatever
+Cobalt drops is limited to 2
+Game is harder
+I can write something very long here waow
+I'm doing stuff
+yey"
+align = 1
+
+[node name="PickButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 290.0
+margin_right = 496.0
+margin_bottom = 347.0
+text = "loadout.torment.pickthosecorruptions"
+
+[node name="CancelButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 451.0
+margin_right = 552.0
+margin_bottom = 508.0
+size_flags_horizontal = 3
+text = "loadout.torment.backtoyafi"
+
+[node name="RightContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 1012.0
+margin_right = 1454.0
+margin_bottom = 508.0
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer"]
+margin_top = 136.0
+margin_right = 442.0
+margin_bottom = 371.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 430.0
+margin_bottom = 223.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 402.0
+margin_bottom = 195.0
+
+[node name="NextModifierTier" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 386.0
+margin_bottom = 65.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "IV"
+align = 1
+valign = 1
+
+[node name="GainedModifier" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 81.0
+margin_right = 386.0
+margin_bottom = 106.0
+rect_min_size = Vector2( 300, 0 )
+text = "-3% to monster health"
+align = 1
+autowrap = true
+
+[node name="RightButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 122.0
+margin_right = 386.0
+margin_bottom = 179.0
+text = "loadout.torment.increasedifficulty"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 960.0
+margin_top = 540.0
+margin_right = 960.0
+margin_bottom = 540.0
+
+[node name="StartButton" type="Button" parent="."]
+visible = false
+margin_left = 944.0
+margin_top = 511.0
+margin_right = 976.0
+margin_bottom = 568.0
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LeftContainer/PanelContainer/MarginContainer/VBoxContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PickButton" to="." method="_on_PickButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/CancelButton" to="." method="_on_CancelButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RightContainer/PanelContainer/MarginContainer/VBoxContainer/RightButton" to="." method="_on_RightButton_pressed"]

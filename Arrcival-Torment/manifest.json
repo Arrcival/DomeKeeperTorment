@@ -1,0 +1,18 @@
+{
+	"name": "Torment",
+	"namespace": "Arrcival",
+	"version_number": "1.0.0",
+	"description": "Adds torment difficulty with corruption tiers.",
+	"website_url": "https://",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"optional_dependencies": [],
+			"authors": ["Arrcival"],
+			"compatible_mod_loader_version": ["3.0.0"],
+			"compatible_game_version": ["3.0.3"],
+			"config_defaults": {}
+		}
+	}
+}
