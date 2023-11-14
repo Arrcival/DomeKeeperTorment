@@ -5,45 +5,32 @@ loadout.torment.pickthosecorruptions,Pick those corruptions
 loadout.torment.backtoyafi,Let me go back to YAFI
 loadout.torment.reducedifficulty,Reduce difficulty
 loadout.torment.increasedifficulty,Increase difficulty
-loadout.torment.torment0,0
-loadout.torment.torment1,I
-loadout.torment.torment2,II
-loadout.torment.torment3,III
-loadout.torment.torment4,IV
-loadout.torment.torment5,V
-loadout.torment.torment6,VI
-loadout.torment.torment7,VII
-loadout.torment.torment8,VIII
-loadout.torment.torment9,IX
-loadout.torment.torment10,X
-loadout.torment.torment11,XI
-loadout.torment.tormentmodifiers1,+10% to damage taken\nRelic switch tiles are hard to mine.
-loadout.torment.tormentmodifierslowered1,None
-loadout.torment.tormentmodifiersincreased1,+10% to damage taken\n-2s to interval time between waves
-loadout.torment.tormentmodifiers2,+20% to damage taken\nRelic switch tiles are hard to mine\n-2s to interval time between waves
-loadout.torment.tormentmodifierslowered2,-10% to damage taken\n+2s to interval time between waves
-loadout.torment.tormentmodifiersincreased2,+10% to damage taken\n+10% to monster health\nCobalt tiles can no longer drop 3
-loadout.torment.tormentmodifiers3,+30% to damage taken\nRelic switch tiles are hard to mine\n-2s to interval time between waves\n+10% to monster health\nCobalt tiles can no longer drop 3
-loadout.torment.tormentmodifierslowered3,-10% to damage taken\n-10% to monster health\n-Cobalt tiles can no longer drop 3
-loadout.torment.tormentmodifiersincreased3,+10% to damage taken\n-2s to interval time between waves\nBonus time for mined iron is halved
-loadout.torment.tormentmodifiers4,+40% to damage taken\nRelic switch tiles are hard to mine\n-4s to interval time between waves\n+10% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved
-loadout.torment.tormentmodifierslowered4,-10% to damage taken\n+2s to interval time between waves\n-Bonus time for mined iron is halved
-loadout.torment.tormentmodifiersincreased4,+10% to damage taken\nTiles are no longer the softest
-loadout.torment.tormentmodifiers5,+50% to damage taken\nRelic switch tiles are hard to mine\n-4s to interval time between waves\n+10% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest
-loadout.torment.tormentmodifierslowered5,-10% to damage taken\n-Tiles are no longer the softest
-loadout.torment.tormentmodifiersincreased5,+10% to damage taken\n-2s to interval time between waves\nSome iron tiles are removed
-loadout.torment.tormentmodifiers6,+60% to damage taken\nRelic switch tiles are hard to mine\n-6s to interval time between waves\n+10% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed
-loadout.torment.tormentmodifierslowered6,-10% to damage taken\n+2s to interval time between waves\n-Some iron tiles are removed
-loadout.torment.tormentmodifiersincreased6,+10% to damage taken\n+10% to monster health\nWater tiles can no longer drop 3
-loadout.torment.tormentmodifiers7,+70% to damage taken\nRelic switch tiles are hard to mine\n-6s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3
-loadout.torment.tormentmodifierslowered7,-10% to damage taken\n-10% to monster health\n-Water tiles can no longer drop 3
-loadout.torment.tormentmodifiersincreased7,+10% to damage taken\n-2s to interval time between waves\nRelic tiles are harder to mine
-loadout.torment.tormentmodifiers8,+80% to damage taken\nRelic switch tiles are hard to mine\n-8s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine
-loadout.torment.tormentmodifierslowered8,-10% to damage taken\n+2s to interval time between waves\n-Relic tiles are harder to mine
-loadout.torment.tormentmodifiersincreased8,+10% to damage taken
-loadout.torment.tormentmodifiers9,+90% to damage taken\nRelic switch tiles are hard to mine\n-8s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine
-loadout.torment.tormentmodifierslowered9,-10% to damage taken
-loadout.torment.tormentmodifiersincreased9,+10% to damage taken\n-2s to interval time between waves\nTiles are no longer soft
-loadout.torment.tormentmodifiers10,+100% to damage taken\nRelic switch tiles are hard to mine\n-10s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine\nTiles are no longer soft
-loadout.torment.tormentmodifierslowered10,-10% to damage taken\n+2s to interval time between waves\n-Tiles are no longer soft
-loadout.torment.tormentmodifiersincreased10,+10% to damage taken
+loadout.torment.tormentmodifiers1,Relic switch tiles are hard to mine
+loadout.torment.tormentmodifiersincreased1,-2s to interval time between waves
+loadout.torment.tormentmodifiers2,Relic switch tiles are hard to mine\n-2s to interval time between waves
+loadout.torment.tormentmodifierslowered2,+2s to interval time between waves
+loadout.torment.tormentmodifiersincreased2,+20% to monster health\nCobalt tiles can no longer drop 3
+loadout.torment.tormentmodifiers3,Relic switch tiles are hard to mine\n-2s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3
+loadout.torment.tormentmodifierslowered3,-20% to monster health\n-Cobalt tiles can no longer drop 3
+loadout.torment.tormentmodifiersincreased3,-2s to interval time between waves\nBonus time for mined iron is halved
+loadout.torment.tormentmodifiers4,Relic switch tiles are hard to mine\n-4s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved
+loadout.torment.tormentmodifierslowered4,+2s to interval time between waves\n-Bonus time for mined iron is halved
+loadout.torment.tormentmodifiersincreased4,Tiles are no longer the softest
+loadout.torment.tormentmodifiers5,Relic switch tiles are hard to mine\n-4s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest
+loadout.torment.tormentmodifierslowered5,-Tiles are no longer the softest
+loadout.torment.tormentmodifiersincreased5,-2s to interval time between waves\nSome iron tiles are removed
+loadout.torment.tormentmodifiers6,Relic switch tiles are hard to mine\n-6s to interval time between waves\n+20% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed
+loadout.torment.tormentmodifierslowered6,+2s to interval time between waves\n-Some iron tiles are removed
+loadout.torment.tormentmodifiersincreased6,+20% to monster health\nWater tiles can no longer drop 3
+loadout.torment.tormentmodifiers7,Relic switch tiles are hard to mine\n-6s to interval time between waves\n+40% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3
+loadout.torment.tormentmodifierslowered7,-20% to monster health\n-Water tiles can no longer drop 3
+loadout.torment.tormentmodifiersincreased7,-2s to interval time between waves\nRelic tiles are harder to mine
+loadout.torment.tormentmodifiers8,Relic switch tiles are hard to mine\n-8s to interval time between waves\n+40% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine
+loadout.torment.tormentmodifierslowered8,+2s to interval time between waves\n-Relic tiles are harder to mine
+loadout.torment.tormentmodifiersincreased8,-5s to interval time between waves
+loadout.torment.tormentmodifiers9,Relic switch tiles are hard to mine\n-13s to interval time between waves\n+40% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nTiles are no longer the softest\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine
+loadout.torment.tormentmodifierslowered9,+5s to interval time between waves
+loadout.torment.tormentmodifiersincreased9,-2s to interval time between waves\nTiles are no longer soft
+loadout.torment.tormentmodifiers10,Relic switch tiles are hard to mine\n-15s to interval time between waves\n+40% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine\nTiles are no longer soft
+loadout.torment.tormentmodifierslowered10,+2s to interval time between waves\n-Tiles are no longer soft
+loadout.torment.damageincreasepertier,Each torment tier increases damage taken per 5%. Current damage increase is :

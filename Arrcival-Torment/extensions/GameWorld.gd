@@ -11,6 +11,8 @@ func getTormentWaveInterval():
 	var totalRemovedTime = 0.0
 	if tormentDifficulty >= 10:
 		totalRemovedTime += 2
+	if tormentDifficulty >= 9:
+		totalRemovedTime += 5
 	if tormentDifficulty >= 8:
 		totalRemovedTime += 2
 	if tormentDifficulty >= 6:

@@ -50,5 +50,5 @@ func _on_tourmentButton_pressed():
 func updateTormentButton():
 	var text = "Torment"
 	if GameWorld.tormentDifficulty > 0:
-		text += " " + str(GameWorld.tormentDifficulty)
+		text += " " + CONSTARRC.toRoman(GameWorld.tormentDifficulty)
 	tormentButton.text = text

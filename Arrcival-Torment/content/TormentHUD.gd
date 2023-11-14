@@ -1,6 +1,5 @@
 extends HudElement
 
-
 func _ready():
 	hide()
 	if GameWorld.tormentDifficulty > 0:
