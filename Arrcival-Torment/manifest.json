@@ -1,7 +1,7 @@
 {
 	"name": "Torment",
 	"namespace": "Arrcival",
-	"version_number": "1.0.0",
+	"version_number": "1.0.3",
 	"description": "Adds torment difficulty with corruption tiers.",
 	"website_url": "https://",
 	"dependencies": [],
