@@ -92,6 +92,8 @@ autowrap = true
 margin_top = 178.0
 margin_right = 372.0
 margin_bottom = 235.0
+focus_neighbour_right = NodePath("../../../../../VBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PickButton")
+focus_neighbour_bottom = NodePath("../../../../../../CancelButton")
 text = "loadout.torment.reducedifficulty"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -142,6 +144,9 @@ align = 1
 margin_top = 290.0
 margin_right = 496.0
 margin_bottom = 347.0
+focus_neighbour_left = NodePath("../../../../../LeftContainer/PanelContainer/MarginContainer/VBoxContainer/LeftButton")
+focus_neighbour_right = NodePath("../../../../../RightContainer/PanelContainer/MarginContainer/VBoxContainer/RightButton")
+focus_neighbour_bottom = NodePath("../../../../../../CancelButton")
 text = "loadout.torment.pickthosecorruptions"
 
 [node name="RightContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -189,6 +194,8 @@ autowrap = true
 margin_top = 122.0
 margin_right = 386.0
 margin_bottom = 179.0
+focus_neighbour_left = NodePath("../../../../../VBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PickButton")
+focus_neighbour_bottom = NodePath("../../../../../../CancelButton")
 text = "loadout.torment.increasedifficulty"
 
 [node name="Limits" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -214,12 +221,17 @@ alignment = 1
 [node name="MoreButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Limits/MarginContainer/VBoxContainer"]
 margin_right = 44.0
 margin_bottom = 57.0
+focus_neighbour_left = NodePath("../../../../VBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PickButton")
+focus_neighbour_bottom = NodePath("../LessButton")
 text = "+"
 
 [node name="LessButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Limits/MarginContainer/VBoxContainer"]
 margin_top = 73.0
 margin_right = 44.0
 margin_bottom = 130.0
+focus_neighbour_left = NodePath("../../../../VBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PickButton")
+focus_neighbour_top = NodePath("../MoreButton")
+focus_neighbour_bottom = NodePath(".")
 text = "-"
 
 [node name="InfoHP" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
