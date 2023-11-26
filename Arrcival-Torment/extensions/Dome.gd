@@ -9,5 +9,5 @@ func requestMeleeDamage(rawDamage:int, pos:Vector2, requester):
 	.requestMeleeDamage(tormentDamage, pos, requester)
 
 func getTormentDamage(rawDamage)->int:
-	var multiplier = 1 + GameWorld.tormentDifficulty * 0.05
+	var multiplier = 1 + (GameWorld.corruptions.getDamageIncrease() / 100.0)
 	return int(rawDamage * multiplier)

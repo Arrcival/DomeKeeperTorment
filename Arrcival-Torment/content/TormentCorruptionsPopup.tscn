@@ -1,0 +1,394 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://gui/theme.tres" type="Theme" id=1]
+[ext_resource path="res://mods-unpacked/Arrcival-Torment/content/TormentCorruptionsPopup.gd" type="Script" id=2]
+[ext_resource path="res://gui/fonts/FontHeading.tres" type="DynamicFont" id=3]
+
+[node name="TourmentCorruptions" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_right = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_left = 163.0
+margin_top = 187.0
+margin_right = 1757.0
+margin_bottom = 892.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 1582.0
+margin_bottom = 693.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 1554.0
+margin_bottom = 665.0
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 1538.0
+margin_bottom = 65.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+custom_fonts/font = ExtResource( 3 )
+text = "loadout.torment.pickyourdifficulty"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 81.0
+margin_right = 1538.0
+margin_bottom = 503.0
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 34.0
+margin_top = 130.0
+margin_right = 392.0
+margin_bottom = 292.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 346.0
+margin_bottom = 150.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 318.0
+margin_bottom = 122.0
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer2"]
+margin_right = 302.0
+margin_bottom = 25.0
+text = "loadout.torment.totalscore"
+align = 1
+
+[node name="Score" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer2"]
+margin_top = 41.0
+margin_right = 302.0
+margin_bottom = 106.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 408.0
+margin_right = 855.0
+margin_bottom = 422.0
+
+[node name="switch" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 447.0
+margin_bottom = 57.0
+rect_pivot_offset = Vector2( -367, -324 )
+size_flags_horizontal = 3
+text = "loadout.torment.relicswitchtiles"
+
+[node name="cobalt" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 73.0
+margin_right = 447.0
+margin_bottom = 130.0
+rect_pivot_offset = Vector2( -616, 0 )
+size_flags_horizontal = 3
+text = "loadout.torment.maximumcobalt"
+
+[node name="bonustime" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 146.0
+margin_right = 447.0
+margin_bottom = 203.0
+rect_pivot_offset = Vector2( -616, 0 )
+size_flags_horizontal = 3
+text = "loadout.torment.halvedbonustime"
+
+[node name="iron" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 219.0
+margin_right = 447.0
+margin_bottom = 276.0
+rect_pivot_offset = Vector2( -616, 0 )
+size_flags_horizontal = 3
+text = "loadout.torment.irondisappears"
+
+[node name="water" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 292.0
+margin_right = 447.0
+margin_bottom = 349.0
+rect_pivot_offset = Vector2( -616, 0 )
+size_flags_horizontal = 3
+text = "loadout.torment.maximumwater"
+
+[node name="relic" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 365.0
+margin_right = 447.0
+margin_bottom = 422.0
+rect_pivot_offset = Vector2( -367, -324 )
+size_flags_horizontal = 3
+text = "loadout.torment.relictiles"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 871.0
+margin_right = 1504.0
+margin_bottom = 422.0
+
+[node name="health" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+margin_right = 633.0
+margin_bottom = 58.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health"]
+margin_top = 16.0
+margin_right = 308.0
+margin_bottom = 41.0
+text = "loadout.torment.monsterhp"
+
+[node name="lessHP" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health"]
+margin_left = 324.0
+margin_right = 382.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+disabled = true
+text = "-"
+
+[node name="totalHP" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health"]
+margin_left = 398.0
+margin_top = 16.0
+margin_right = 430.0
+margin_bottom = 41.0
+text = "0%"
+
+[node name="moreHP" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health"]
+margin_left = 446.0
+margin_right = 504.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+text = "+"
+
+[node name="length" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+margin_top = 74.0
+margin_right = 633.0
+margin_bottom = 132.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length"]
+margin_top = 16.0
+margin_right = 322.0
+margin_bottom = 41.0
+text = "loadout.torment.wavelength"
+
+[node name="moreTime" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length"]
+margin_left = 338.0
+margin_right = 396.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+disabled = true
+text = "-"
+
+[node name="totalWaveTime" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length"]
+margin_left = 412.0
+margin_top = 16.0
+margin_right = 447.0
+margin_bottom = 41.0
+text = "-0s"
+
+[node name="lessTime" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length"]
+margin_left = 463.0
+margin_right = 521.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+text = "+"
+
+[node name="dmg" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+margin_top = 148.0
+margin_right = 633.0
+margin_bottom = 206.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg"]
+margin_top = 16.0
+margin_right = 343.0
+margin_bottom = 41.0
+text = "loadout.torment.damagetaken"
+
+[node name="lessDmg" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg"]
+margin_left = 359.0
+margin_right = 417.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+disabled = true
+text = "-"
+
+[node name="totalDamageTaken" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg"]
+margin_left = 433.0
+margin_top = 16.0
+margin_right = 478.0
+margin_bottom = 41.0
+text = "+0%"
+
+[node name="moreDmg" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg"]
+margin_left = 494.0
+margin_right = 552.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+text = "+"
+
+[node name="hard" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+margin_top = 222.0
+margin_right = 633.0
+margin_bottom = 280.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard"]
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 41.0
+text = "loadout.torment.minimumhardness"
+
+[node name="lessHard" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard"]
+margin_left = 404.0
+margin_right = 462.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+disabled = true
+text = "-"
+
+[node name="minimumhardness" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard"]
+margin_left = 478.0
+margin_top = 16.0
+margin_right = 559.0
+margin_bottom = 41.0
+text = "Softest"
+
+[node name="moreHard" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard"]
+margin_left = 575.0
+margin_right = 633.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 58, 58 )
+text = "+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 519.0
+margin_right = 1538.0
+margin_bottom = 576.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_top = 16.0
+margin_right = 350.0
+margin_bottom = 41.0
+text = "loadout.torment.tormentpreset"
+
+[node name="tier1" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 366.0
+margin_right = 453.0
+margin_bottom = 57.0
+text = "Tier I"
+
+[node name="tier2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 469.0
+margin_right = 565.0
+margin_bottom = 57.0
+text = "Tier II"
+
+[node name="tier3" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 581.0
+margin_right = 686.0
+margin_bottom = 57.0
+text = "Tier III"
+
+[node name="tier4" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 702.0
+margin_right = 807.0
+margin_bottom = 57.0
+text = "Tier IV"
+
+[node name="tier5" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 823.0
+margin_right = 919.0
+margin_bottom = 57.0
+text = "Tier V"
+
+[node name="tier6" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 935.0
+margin_right = 1040.0
+margin_bottom = 57.0
+text = "Tier VI"
+
+[node name="tier7" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 1056.0
+margin_right = 1170.0
+margin_bottom = 57.0
+text = "Tier VII"
+
+[node name="tier8" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 1186.0
+margin_right = 1309.0
+margin_bottom = 57.0
+text = "Tier VIII"
+
+[node name="tier9" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 1325.0
+margin_right = 1428.0
+margin_bottom = 57.0
+text = "Tier IX"
+
+[node name="tier10" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 1444.0
+margin_right = 1538.0
+margin_bottom = 57.0
+text = "Tier X"
+
+[node name="CancelButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 592.0
+margin_right = 1538.0
+margin_bottom = 649.0
+size_flags_horizontal = 3
+text = "loadout.torment.closepopup"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 960.0
+margin_top = 540.0
+margin_right = 960.0
+margin_bottom = 540.0
+
+[node name="StartButton" type="Button" parent="."]
+visible = false
+margin_left = 944.0
+margin_top = 511.0
+margin_right = 976.0
+margin_bottom = 568.0
+
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/switch" to="." method="_on_switch_toggled"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/cobalt" to="." method="_on_cobalt_toggled"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/bonustime" to="." method="_on_bonustime_toggled"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/iron" to="." method="_on_iron_toggled"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/water" to="." method="_on_water_toggled"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/relic" to="." method="_on_relic_toggled"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health/lessHP" to="." method="_on_lessHP_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/health/moreHP" to="." method="_on_moreHP_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length/moreTime" to="." method="_on_moreTime_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/length/lessTime" to="." method="_on_lessTime_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg/lessDmg" to="." method="_on_lessDmg_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/dmg/moreDmg" to="." method="_on_moreDmg_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard/lessHard" to="." method="_on_lessHard_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/hard/moreHard" to="." method="_on_moreHard_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier1" to="." method="_on_tier1_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier2" to="." method="_on_tier2_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier3" to="." method="_on_tier3_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier4" to="." method="_on_tier4_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier5" to="." method="_on_tier5_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier6" to="." method="_on_tier6_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier7" to="." method="_on_tier7_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier8" to="." method="_on_tier8_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier9" to="." method="_on_tier9_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/tier10" to="." method="_on_tier10_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/CancelButton" to="." method="_on_CancelButton_pressed"]

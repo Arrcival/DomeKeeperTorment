@@ -5,9 +5,5 @@ func _ready():
 	maxHealth = currentHealth
 
 func getTormentBonusHealth(health):	
-	var percentageBonusHealth = 1.0
-	if GameWorld.tormentDifficulty >= 7:
-		percentageBonusHealth += 0.2
-	if GameWorld.tormentDifficulty >= 3:
-		percentageBonusHealth += 0.2
+	var percentageBonusHealth = 1.0 + (GameWorld.corruptions.getHPIncrease() / 100.0)
 	return health * percentageBonusHealth

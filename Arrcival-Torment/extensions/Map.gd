@@ -53,9 +53,9 @@ func destroyTile(tile):
 		if drops < 3 and Level.difficulty() * 0.1 < - randf():
 			drops += 1
 			
-		if GameWorld.tormentDifficulty >= 3 and tile.type == CONST.SAND and drops == 3:
+		if GameWorld.corruptions.limitedCobalt and tile.type == CONST.SAND and drops == 3:
 			drops -= 1
-		if GameWorld.tormentDifficulty >= 7 and tile.type == CONST.WATER and drops == 3:
+		if GameWorld.corruptions.limitedWater and tile.type == CONST.WATER and drops == 3:
 			drops -= 1
 			
 		if drops == 3 and (tile.type == CONST.SAND or tile.type == CONST.WATER):
@@ -80,6 +80,6 @@ func destroyTile(tile):
 func getProgress()->float:
 	var progress = .getProgress()
 	
-	if GameWorld.tormentDifficulty >= 4:
+	if GameWorld.corruptions.bonusTimeHalved:
 		progress /= 2
 	return progress

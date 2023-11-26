@@ -24,7 +24,8 @@ func ready():
 	moreButton = find_node("MoreButton")
 	backButton = find_node("CancelButton")
 	refreshContainers()
-	pickButton.grab_focus()
+	InputSystem.grabFocus(self)
+	InputSystem.grabFocus(pickButton)
 
 func refreshContainers():
 	var leftNode = find_node("LeftContainer")
@@ -44,9 +45,9 @@ func refreshContainers():
 	
 	if currentTierPicked == CONSTARRC.HIGHEST_TIER:
 		pickButton.grab_focus()
-		pickButton.set_focus_neighbour(MARGIN_RIGHT, moreButton.get_path())
+		leftButton.set_focus_neighbour(MARGIN_RIGHT, moreButton.get_path())
 	if currentTierPicked == CONSTARRC.HIGHEST_TIER - 1:
-		pickButton.set_focus_neighbour(MARGIN_RIGHT, rightButton.get_path())
+		leftButton.set_focus_neighbour(MARGIN_RIGHT, rightButton.get_path())
 	if currentTierPicked == CONSTARRC.LOWEST_TIER:
 		pickButton.grab_focus()
 		
@@ -94,3 +95,4 @@ func _on_LessButton_pressed():
 	if currentTierPicked >= CONSTARRC.HIGHEST_TIER:
 		currentTierPicked -= 1
 		refreshContainers()
+

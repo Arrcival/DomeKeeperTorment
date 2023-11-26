@@ -6,6 +6,23 @@ const HIGHEST_TIER_CAP := 100
 
 const TORMENT_DIFFICULTY := 33
 
+const MAXIMUM_HARDNESS := 2
+const MAXIMUM_DAMAGE := 20
+const MAXIMUM_HEALTH := 10
+const MAXIMUM_LENGTH := 5
+
+const HEALTH_PER_TIER := 10
+const LENGTH_PER_TIER := 2
+const DAMAGE_PER_TIER := 5
+
+static func getHardnessText(hardness):
+	if hardness == 1:
+		return "Soft"
+	if hardness == 2:
+		return "Medium"
+	return "Softest"
+
+
 static func toRoman(num):
 	if(num >= 1000): return 'M'  + toRoman(num - 1000);
 	if(num >=  900): return 'CM' + toRoman(num -  900);

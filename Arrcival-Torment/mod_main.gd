@@ -16,6 +16,7 @@ func _init(modLoader = ModLoader):
 	loadExtension(ext_dir, "Map.gd")
 	loadExtension(ext_dir, "Monster.gd")
 	loadExtension(ext_dir, "RelichuntPopup.gd")
+	loadExtension(ext_dir, "RunStats.gd")
 	loadExtension(ext_dir, "TileDataGenerator.gd")
 	
 	ModLoaderMod.add_translation(dir + "localization/torment.en.translation")
@@ -35,5 +36,5 @@ func modInit():
 	pass
 
 func addTormentHud():
-	if GameWorld.tormentDifficulty > 0:
+	if GameWorld.corruptions.getTotalScore() > 0:
 		Level.hud.addHudElement({"hud": "mods-unpacked/Arrcival-Torment/content/TormentHUD.tscn"})

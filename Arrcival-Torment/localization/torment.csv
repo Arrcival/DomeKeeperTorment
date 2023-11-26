@@ -1,6 +1,6 @@
 keys,en
 loadout.difficulty.torment.description,You decided to corrupt your dome but at what cost?
-loadout.torment.pickyourdifficulty,Pick your difficulty tier
+loadout.torment.pickyourdifficulty,Choose your corruptions
 loadout.torment.pickthosecorruptions,Pick those corruptions
 loadout.torment.backtoyafi,Let me go back to YAFI
 loadout.torment.reducedifficulty,Reduce difficulty
@@ -33,4 +33,18 @@ loadout.torment.tormentmodifierslowered9,+5s to interval time between waves
 loadout.torment.tormentmodifiersincreased9,-2s to interval time between waves\nTiles are no longer soft
 loadout.torment.tormentmodifiers10,Relic switch tiles are hard to mine\n-15s to interval time between waves\n+40% to monster health\nCobalt tiles can no longer drop 3\nBonus time for mined iron is halved\nSome iron tiles are removed\nWater tiles can no longer drop 3\nRelic tiles are harder to mine\nTiles are no longer soft
 loadout.torment.tormentmodifierslowered10,+2s to interval time between waves\n-Tiles are no longer soft
+,
 loadout.torment.damageincreasepertier,Each torment tier increases damage taken per 5%. Current damage increase is :
+loadout.torment.relicswitchtiles,Relic switch tiles are harder to mine
+loadout.torment.maximumcobalt,Cobalt tiles can no longer drop 3
+loadout.torment.halvedbonustime,Bonus time for mined iron is halved
+loadout.torment.irondisappears,Some iron tiles are removed
+loadout.torment.maximumwater,Water tiles can no longer drop 3
+loadout.torment.relictiles,Relic tiles are harder to mine
+loadout.torment.tormentpreset,Pick a torment preset
+loadout.torment.monsterhp,Increased monster hp
+loadout.torment.wavelength,Reduced time between waves
+loadout.torment.damagetaken,Increased damage taken
+loadout.torment.minimumhardness,Minimum tile hardness
+loadout.torment.closepopup,Proceed
+loadout.torment.totalscore,Total score

@@ -1,7 +1,12 @@
 extends HudElement
 
+const CONSTARRC = preload("res://mods-unpacked/Arrcival-Torment/Consts.gd")
+
 func _ready():
 	hide()
-	if GameWorld.tormentDifficulty > 0:
-		$TierDisplay.text = "Torment " + str(GameWorld.tormentDifficulty)
+	if GameWorld.corruptions.getTotalScore() > 0:
+		var text = "Corruptions " + str(GameWorld.corruptions.getTotalScore())
+		if GameWorld.corruptions.preset > 0:
+			text += " (" + CONSTARRC.toRoman(GameWorld.corruptions.preset) + ")"
+		$TierDisplay.text = text
 		show()
